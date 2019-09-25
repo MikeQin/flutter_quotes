@@ -16,11 +16,10 @@ class _QuoteListState extends State<QuoteList> {
         author: 'Oscar Wilde',
         text: 'Be yourself; everyone else is already taken'),
     Quote(
-        author: 'Oscar Wilde',
+        author: 'Jason Fox',
         text: 'I have nothing to declare except my genius'),
     Quote(
-        author: 'Oscar Wilde',
-        text: 'The truth is rarely pure and never simple')
+        author: 'Bill Smith', text: 'The truth is rarely pure and never simple')
   ];
 
   @override
@@ -42,6 +41,11 @@ class _QuoteListState extends State<QuoteList> {
                   });
                 }))
             .toList(),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => print('button pressed'),
+        tooltip: 'Add a new quote...',
+        child: Icon(Icons.add),
       ),
     );
   }
