@@ -1,4 +1,4 @@
-# quotes
+# Flutter Quotes
 
 A new Flutter application.
 
